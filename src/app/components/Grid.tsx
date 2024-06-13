@@ -246,7 +246,7 @@ const Grid = ({
           setMoves={setMoves}
           moves={moves}
           players={info.players}
-          size={+info.size * 2}
+          size={(+info.size * +info.size) / 2}
           setShowoverlay={setShowoverlay}
           clearTimer={clearTimer}
         >
@@ -261,7 +261,7 @@ const Grid = ({
           setMoves={setMoves}
           moves={moves}
           players={info.players}
-          size={+info.size * 2}
+          size={(+info.size * +info.size) / 2}
           setShowoverlay={setShowoverlay}
           clearTimer={clearTimer}
         >
