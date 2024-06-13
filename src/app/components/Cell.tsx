@@ -61,8 +61,8 @@ const Cell = ({
         }, 500);
       } else {
         +players === 1 && setMoves((moves) => moves + 1);
-        dispatch(setNextTurn((currentTurn + 1) % +players));
         setTimeout(() => {
+          dispatch(setNextTurn((currentTurn + 1) % +players));
           previous.stateUpdatingFunction &&
             previous.stateUpdatingFunction("deselected");
           setState("deselected");
