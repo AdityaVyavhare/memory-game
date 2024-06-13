@@ -1,0 +1,44 @@
+.form-container {
+  width: min(750px, 95vw);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+}
+.form,
+.form > div {
+  outline: none;
+  display: grid;
+  grid-auto-flow: row;
+}
+.form {
+  gap: 2rem;
+}
+.form > div {
+  gap: 1rem;
+}
+.label-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  font-size: large;
+  font-weight: 700;
+}
+.label-container > label {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: white;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+.label-container > input {
+  display: none;
+}
+.label-container > input + label:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.label-container > input:checked + label {
+  background-color: white;
+  color: black;
+}

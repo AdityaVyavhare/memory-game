@@ -1,0 +1,74 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  width: min(500px, 100vw);
+  transition: all 0.1s ease-in 1ms;
+}
+.players-container {
+  padding: 0.5rem 0.25rem;
+  display: grid;
+  grid-auto-flow: column;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  width: min(500px, 100vw);
+}
+.players-container > div {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 1px solid white;
+  min-width: max-content;
+  gap: 1rem;
+}
+.current-turn::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  top: -0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+.current-turn::after {
+  content: "Current Turn";
+  color: white;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  font-size: small;
+}
+.modelItem {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  outline: none;
+}
+.modelItemContainer {
+  display: grid;
+  grid-auto-rows: row;
+  gap: 1rem;
+}
+.winner {
+  background: white !important;
+  color: black !important;
+}
