@@ -10,6 +10,7 @@
   font-size: 1.65rem;
   cursor: pointer;
   justify-self: center;
+  margin-block: 0.5rem;
 }
 .cell > * {
   display: none;
