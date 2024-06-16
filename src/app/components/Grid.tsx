@@ -83,7 +83,7 @@ const SinglePlayer = ({
     return () => {
       clearInterval(id);
     };
-  }, []);
+  }, [time]);
 
   return (
     <>
